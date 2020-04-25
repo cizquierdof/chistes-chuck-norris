@@ -1,0 +1,11 @@
+.cabecera {
+    background-color: antiquewhite;
+    padding: 0.5em;
+}
+.cabecera h2{
+    font-size: 5em !important;
+}
+.ui.header img{
+    width: 4em;
+    margin-right: 1em;
+}
