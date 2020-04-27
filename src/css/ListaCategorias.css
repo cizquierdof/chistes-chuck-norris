@@ -1,7 +1,0 @@
-.ui.list{
-    padding-left: 1em;
-}
-.item:hover{
-    background-color: coral;
-    cursor: pointer;
-}

@@ -1,19 +1,42 @@
 .container{
     display: grid;
-    grid-template-columns: 20% 1fr;
-    grid-template-rows: 32% 1fr;
+    grid-template-columns: 20% 40% 1fr;
+    grid-template-rows: 23% 1fr;
+    gap: 0.5em;
 }
 
 .div-header{
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
 }
-.div-lista{
+.div-categorias{
     background-color: antiquewhite;
-    padding: 1em;
+}
+
+.div-categorias .items{
+    padding: 1em 1em 0 2em;
+}
+
+.div-categorias .item:hover{
+    background-color: coral;
+    cursor: pointer;
 }
 
 .div-joke{
     padding: 1em;
+    background-color: antiquewhite;
 
+}
+
+.div-favoritos{
+    background-color: antiquewhite;
+    padding: 1em;
+}
+
+.div-categorias .icon{
+    margin-right: 0.5em;
+}
+
+.ui.card{
+    box-shadow: 5px 10px 8px #888888;
 }

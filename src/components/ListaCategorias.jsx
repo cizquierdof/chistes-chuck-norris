@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Axios from 'axios';
-import '../css/ListaCategorias.css'
 
 export class Listacategorias extends Component {
 
@@ -13,8 +12,8 @@ export class Listacategorias extends Component {
 
     componentDidMount() {
         Axios.get('https://api.chucknorris.io/jokes/categories')
-            .then(res =>{
-                this.setState({categorias: res.data});
+            .then(res => {
+                this.setState({ categorias: res.data });
             }).catch(
                 console.log
             )
@@ -23,17 +22,19 @@ export class Listacategorias extends Component {
     render() {
         //console.log('props',this.props)
         return (
-            <div className='ui list'>
+            <div className='ui items'>
+            <h1 className="ui header">Categorías</h1>
                 {this.state.categorias.map(
-                    items=>
-                    
-                    <div key={items} className="item" onClick={()=>this.props.setCategoria(items)}>
-                    <i className="folder icon"></i>
-                    <div className="content">
-                        <div className="header">{items}</div>
-                    </div>
-                </div>
-                
+                    items =>
+                        <div className="item" key={items} onClick={() => this.props.setCategoria(items)}>
+                            <div className="ui icon">
+                                <i className="folder icon"></i>
+                            </div>
+                            <div className="middle aligned content">
+                                <p className="header">{items}</p>
+                            </div>
+                        </div>
+
                 )}
 
 

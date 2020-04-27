@@ -1,0 +1,19 @@
+{
+  "jokes": [
+    {
+      "id": 7,
+      "categoria": "explicit",
+      "value": "It is said that, on average, men think about sex every seven seconds. That average is based solely on Chuck Norris."
+    },
+    {
+      "id": 8,
+      "categoria": null,
+      "value": "Chuck Norris can write a haiku with one syllable."
+    },
+    {
+      "id": 9,
+      "categoria": "movie",
+      "value": "The original title for Alien vs. Predator was Alien and Predator vs Chuck Norris. The film was cancelled shortly after going into preproduction. No one would pay nine dollars to see a movie fourteen seconds long."
+    }
+  ]
+}
