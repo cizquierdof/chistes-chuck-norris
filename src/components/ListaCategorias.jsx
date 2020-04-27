@@ -20,7 +20,6 @@ export class Listacategorias extends Component {
     }
 
     render() {
-        //console.log('props',this.props)
         return (
             <div className='ui items'>
             <h1 className="ui header">Categorías</h1>
@@ -34,10 +33,7 @@ export class Listacategorias extends Component {
                                 <p className="header">{items}</p>
                             </div>
                         </div>
-
                 )}
-
-
             </div>
         )
     }

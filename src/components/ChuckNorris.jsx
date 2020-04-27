@@ -72,12 +72,10 @@ export class ChuckNorris extends Component {
         Axios.delete(`${DATA_API_URL}/jokes/${id}/`)
             .then(
                 res => {
-
                     console.log('chiste borrado: ', res.data);
                     this.getFavorites();
                 }
             )
-
     }
 
     componentDidMount() {
