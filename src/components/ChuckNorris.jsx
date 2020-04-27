@@ -85,8 +85,11 @@ export class ChuckNorris extends Component {
 
     componentDidUpdate(prevProps, prevState) {
         //console.log(this.state.url, '--', prevState.url)
-        if (this.state.url !== prevState.url)
-            this.getJoke();
+        // if (this.state.cat !== prevState.cat)
+        //     this.getJoke();
+        if (this.state.randomJoke === prevState.randomJoke)
+        this.getJoke();
+
     }
 
     render() {
