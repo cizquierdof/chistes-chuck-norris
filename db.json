@@ -1,11 +1,6 @@
 {
   "jokes": [
     {
-      "id": 7,
-      "categoria": "explicit",
-      "value": "It is said that, on average, men think about sex every seven seconds. That average is based solely on Chuck Norris."
-    },
-    {
       "id": 8,
       "categoria": null,
       "value": "Chuck Norris can write a haiku with one syllable."
@@ -19,6 +14,51 @@
       "id": 10,
       "categoria": "food",
       "value": "Chuck Norris uses tabasco sauce instead of visine."
+    },
+    {
+      "id": 11,
+      "categoria": "history",
+      "value": "Chuck Norris once shot down a German fighter plane with his finger. By yelling \"Bang!\""
+    },
+    {
+      "id": 12,
+      "categoria": "explicit",
+      "value": "Chuck Norris' penis has biceps."
+    },
+    {
+      "id": 13,
+      "categoria": "explicit",
+      "value": "The U2 song \"Sunday Bloody Sunday\" was written to depict the day of the week when Chuck Norris has sex with Irish women."
+    },
+    {
+      "id": 14,
+      "categoria": "fashion",
+      "value": "Chuck Norris does not follow fashion trends, they follow him. But then he turns around and kicks their ass. Nobody follows Chuck Norris."
+    },
+    {
+      "id": 15,
+      "categoria": "money",
+      "value": "When Chuck Norris sends in his taxes, he sends blank forms and includes only a picture of himself, crouched and ready to attack. Chuck Norris has not had to pay taxes, ever."
+    },
+    {
+      "id": 16,
+      "categoria": "political",
+      "value": "Chuck Norris, Jesus, and Barack Obama were standing by a lake. Jesus walked out on the water and was shortly followed by Chuck. Obama tried to follow, but fell in the water. After muck kicking and splashing Jesus said: Do you think we should tell him about the \"stepping stones\"? Chuck then said: \"What stepping stone?\""
+    },
+    {
+      "id": 17,
+      "categoria": "science",
+      "value": "The square root of Chuck Norris is pain. Do not try to square Chuck Norris, the result is death."
+    },
+    {
+      "id": 18,
+      "categoria": "religion",
+      "value": "Chuck Norris doesn't play god. Playing is for children."
+    },
+    {
+      "id": 19,
+      "categoria": "science",
+      "value": "Nothing can escape the gravity of a black hole, except for Chuck Norris. Chuck Norris eats black holes. They taste like chicken."
     }
   ]
 }

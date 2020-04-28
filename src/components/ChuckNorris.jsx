@@ -6,6 +6,8 @@ import '../css/ChuckNorris.css'
 import Axios from 'axios'
 import { BASE_URL, DATA_API_URL } from './config'
 import Favoritos from './Favoritos'
+import RenderPDF from './RenderPDF'
+import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 
 export class ChuckNorris extends Component {
 
@@ -78,6 +80,9 @@ export class ChuckNorris extends Component {
             )
     }
 
+    onClickPDFHandler = () => {
+    }
+
     componentDidMount() {
         this.getJoke();
         this.getFavorites();
@@ -88,27 +93,25 @@ export class ChuckNorris extends Component {
         // if (this.state.cat !== prevState.cat)
         //     this.getJoke();
         if (this.state.randomJoke === prevState.randomJoke)
-        this.getJoke();
+            this.getJoke();
 
     }
+    
 
     render() {
         return (
-            <div className='container'>
-                <div className='div-header'>
-                    <Header />
-                </div>
-                <div className='div-categorias'>
-                    <ListaCategorias setCategoria={this.setCategoria} />
-                </div>
-                <div className='div-joke'>
-                    <Joke randomJoke={this.state.randomJoke}
+            <div className='chuck-norris'>
+                <ListaCategorias setCategoria={this.setCategoria} />
+                <Joke randomJoke={this.state.randomJoke}
                         categoria={this.state.cat || 'Random'}
                         setFavorito={this.setFavorito} />
-                </div>
-                <div  className='div-favoritos'>
+                <div className='div-favoritos'>
+                    <Link to='/pdf' className="ui labeled icon button">
+                        <i className="file pdf icon outline red"></i>
+                        Mostrar como PDF
+                    </Link>
                 <Favoritos favoritos={this.state.favoritos}
-                    delete={this.deleteFavorito} />
+                        delete={this.deleteFavorito} />
                 </div>
             </div>
         )

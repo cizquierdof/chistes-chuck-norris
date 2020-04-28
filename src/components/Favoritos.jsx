@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Axios from 'axios';
 import { DATA_API_URL } from './config';
+import '../css/Favoritos.css'
 
 export class Favoritos extends Component {
 

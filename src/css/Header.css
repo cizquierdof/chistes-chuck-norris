@@ -1,4 +1,6 @@
-.cabecera {
+.cabecera{
+    grid-column-start: 1;
+    grid-column-end: 4;
     background-color: antiquewhite;
     padding: 0.5em;
 }
@@ -8,4 +10,5 @@
 .ui.header img{
     width: 4em;
     margin-right: 1em;
+    
 }

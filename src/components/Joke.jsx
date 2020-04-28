@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../css/Joke.css'
 
 export class Joke extends Component {
 
@@ -9,7 +10,7 @@ export class Joke extends Component {
     render() {
         //console.log('jokes props',this.props);
         return (
-            <div>
+            <div className='div-joke'>
                 <h1 className="ui header">Chiste {this.props.categoria}</h1>
                 <div className='ui card'>
                     <div className='content'>

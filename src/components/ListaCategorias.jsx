@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Axios from 'axios';
+import '../css/ListaCategorias.css'
 
 export class Listacategorias extends Component {
 
@@ -21,7 +22,8 @@ export class Listacategorias extends Component {
 
     render() {
         return (
-            <div className='ui items'>
+            <div className='div-categorias'>
+            <div className='ui items '>
             <h1 className="ui header">Categorías</h1>
                 {this.state.categorias.map(
                     items =>
@@ -34,6 +36,7 @@ export class Listacategorias extends Component {
                             </div>
                         </div>
                 )}
+            </div>
             </div>
         )
     }

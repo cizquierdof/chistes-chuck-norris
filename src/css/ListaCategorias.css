@@ -1,0 +1,14 @@
+.div-categorias{
+    background-color: antiquewhite;
+    padding: 1em 0em 0 2em;
+
+}
+
+.div-categorias .item:hover{
+    background-color: coral;
+    cursor: pointer;
+}
+
+.div-categorias .icon{
+    margin-right: 0.5em;
+}
