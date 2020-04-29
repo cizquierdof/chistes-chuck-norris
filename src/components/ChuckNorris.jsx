@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import ListaCategorias from './ListaCategorias'
-import Header from './Header'
 import Joke from './Joke'
 import '../css/ChuckNorris.css'
 import Axios from 'axios'
 import { BASE_URL, DATA_API_URL } from './config'
 import Favoritos from './Favoritos'
-import RenderPDF from './RenderPDF'
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 export class ChuckNorris extends Component {
 

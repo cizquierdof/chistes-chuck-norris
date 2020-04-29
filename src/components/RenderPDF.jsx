@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Axios from 'axios';
 import { DATA_API_URL } from './config';
-import { PDFViewer, Document, Page, View, Text, StyleSheet } from '@react-pdf/renderer';
+import { PDFViewer, Document, Page, View, Text, StyleSheet, Font } from '@react-pdf/renderer';
 import '../css/RenderPDF.css'
 import { Link } from 'react-router-dom';
 
@@ -26,14 +26,35 @@ export class RenderPDF extends Component {
 
         const styles = StyleSheet.create({
             page: {
+                marginTop: 20,
+                marginBottom: 20,
+                marginRight: 10,
+                marginLeft: 10,
+                padding: 20,
                 flexDirection: 'column',
                 backgroundColor: '#e4e4e4',
-                size: 'A4'
             },
-            section: {
-                margin: 10,
-                padding: 10,
+            title: {
+                fontSize: 24,
+                textAlign: "center",
+                marginBottom: 20,
+                fontFamily: 'Oswald'
+            },
+            subtitulo: {
+                fontSize: 20,
+                color: 'grey',
+                marginBottom: 10,
+                fontFamily: 'Oswald'
+            },
+            parrafo: {
+                fontSize: 14,
+                padding: 10
             }
+        });
+
+        Font.register({
+            family: 'Oswald',
+            src: 'https://fonts.gstatic.com/s/oswald/v13/Y_TKV6o8WovbUd3m_X9aAA.ttf'
         });
 
         return (
@@ -45,16 +66,17 @@ export class RenderPDF extends Component {
                 <PDFViewer className='render-pdf'>
                     <Document>
                         <Page style={styles.page}>
+                            <View style={styles.title}>
+                                <Text>Chistes Favoritos</Text>
+                            </View>
                             {
                                 this.state.favoritos.map(
                                     res =>
-                                        <View key={res} style={styles.section}>
-                                            <Text style={{ fontSize: 24 }}>
-                                                {res.categoria || 'Sin categoria'}
-                                            </Text>
-                                            <Text>
-                                                {res.value}
-                                            </Text>
+                                        <View key={res} style={styles.parrafo}>
+                                            <View style={styles.subtitulo}>
+                                                <Text >{res.categoria || 'Sin categoria'}</Text>
+                                            </View>
+                                            <Text>{res.value}</Text>
                                         </View>
                                 )
                             }
